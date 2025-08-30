@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <span class="simon">SIMON</span>
+                <span class="says">SAYS</span>
+            </div>
+            <div class="subtitle">Test Your Memory Skills</div>
+        </div>
+        
+        <h2 id="game-message">Press Start or Spacebar to Play</h2>
+        
+        <div class="score-board">
+            <div class="score-item">
+                <div>Level</div>
+                <div class="score-value" id="level">0</div>
+            </div>
+            <div class="score-item">
+                <div>Score</div>
+                <div class="score-value" id="score">0</div>
+            </div>
+            <div class="score-item">
+                <div>High Score</div>
+                <div class="score-value" id="high-score">0</div>
+            </div>
+        </div>
+        
+        <div class="game-board">
+            <div class="btn-container">
+                <div class="btn red" id="red"></div>
+                <div class="btn yellow" id="yellow"></div>
+                <div class="btn green" id="green"></div>
+                <div class="btn purple" id="purple"></div>
+            </div>
+            <div class="center-circle">
+                <div>LEVEL</div>
+                <div class="level-display" id="level-display">0</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn">Start Game</button>
+            <button id="strict-btn">Strict Mode: OFF</button>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Watch the sequence of button flashes carefully</li>
+                <li>Repeat the sequence by clicking the buttons in the same order</li>
+                <li>Each level adds one more step to the sequence</li>
+                <li>Make a mistake and you'll have to start over (in strict mode)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
