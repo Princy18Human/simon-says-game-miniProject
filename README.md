@@ -37,6 +37,3 @@ sounds. Each correct attempt increases your level and score!
 ## 🎯 Goal
 
 Test and improve your memory while having fun!
-
-##Images
-
